@@ -40,10 +40,10 @@ contact3.show_contact()
 ##### 3. 고급: 사람 클래스에서 새로운 사람을 만들 때 입력은 그대로 유지하면서, 직급도 처음 만들어질 때 입력하도록 변경을 도전
 class Work2(Person):
     def __init__(self, name, age, gender, position):  # 사용할 입력인자 모두 나열
-        super(Work2, self).__init__(name, age, gender)  # BaseClass에서 가져올 입력인자를 super()로 참조
+        super().__init__(name, age, gender)  # BaseClass에서 가져올 입력인자를 super()로 참조
         self.position = position  # 새로 추가한 입력인자를 정의
     def show_contact(self):
-        super(Work2, self).show_contact()
+        super().show_contact()
         print('직급: {}'.format(self.position))
 
 # 객체 생성
