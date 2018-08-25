@@ -8,9 +8,12 @@
     <meta name="description" content="">
     <mate name="author" content="">
     <title>{% block title %}sample{% endblock %}</title>
+    <link rel="stylesheet" href='{% static "css/lib/bootstrap.min.css" %}'>
+    <link rel="stylesheet" href='{% static "css/lib/all.min.css" %}'>
     <link rel="stylesheet" href='{% static "css/base.css" %}'>
 </head>
 <body>
   {% block body %}{% endblock %}
+  <script src='{% static "js/lib/bootstrap.min.js" %}'></script>
 </body>
 </html>
